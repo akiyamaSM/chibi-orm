@@ -15,6 +15,7 @@ $container['config']= function (){
       'db_password' => '',
   ];
 };
+
 $container['db']= function($container){
     return new Javanile\Moldable\Database([
         'host'     => $container->config['db_host'],
