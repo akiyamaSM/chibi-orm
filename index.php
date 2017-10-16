@@ -7,13 +7,13 @@ $app = new App\App();
 $container = $app->getContainer();
 
 $container['config']= function (){
-  return [
-      'db_driver' => 'mysql',
-      'db_host' => 'localhost',
-      'db_name' => 'market',
-      'db_user' => 'root',
-      'db_password' => '',
-  ];
+    return [
+        'db_driver' => 'mysql',
+        'db_host' => 'localhost',
+        'db_name' => 'market',
+        'db_user' => 'root',
+        'db_password' => '',
+    ];
 };
 
 $container['db']= function($container){
@@ -25,8 +25,9 @@ $container['db']= function($container){
         'prefix'   => '',
     ]);
 };
+
 $router = $container->router;
 
-require_once 'app\Http\routes.php';
+require_once 'app/Http/routes.php';
 
 $app->run();
