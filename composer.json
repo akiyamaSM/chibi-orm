@@ -5,9 +5,9 @@
       }
   },
   "require": {
-    "javanile/moldable": "^0.0.46"
+    "javanile/moldable": "^0.0.46",
+    "javanile/producer": "^0.0.18"
   },
   "require-dev": {
-    "javanile/producer": "^0.0.18"
   }
 }

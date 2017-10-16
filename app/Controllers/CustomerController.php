@@ -6,8 +6,8 @@ use App\Request;
 use App\Response;
 use App\Models\Customer;
 
-class CustomerController {
-
+class CustomerController
+{
     public function edit(Request $request, Response $response)
     {
         $id = isset($_GET['id']) ? $_GET['id'] : null;

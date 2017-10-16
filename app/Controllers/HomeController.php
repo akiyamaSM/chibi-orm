@@ -5,8 +5,8 @@ namespace App\Controllers;
 use App\Request;
 use App\Response;
 
-class HomeController {
-
+class HomeController
+{
     public function index(Request $request, Response $response)
     {
         return $response->setBody("HomeController");

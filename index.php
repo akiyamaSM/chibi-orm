@@ -6,7 +6,7 @@ $app = new App\App();
 
 $container = $app->getContainer();
 
-$container['config']= function (){
+$container['config'] = function () {
     return [
         'db_driver' => 'mysql',
         'db_host' => 'localhost',
@@ -16,7 +16,7 @@ $container['config']= function (){
     ];
 };
 
-$container['db']= function($container){
+$container['db'] = function ($container) {
     return new Javanile\Moldable\Database([
         'host'     => $container->config['db_host'],
         'dbname'   => $container->config['db_name'],
