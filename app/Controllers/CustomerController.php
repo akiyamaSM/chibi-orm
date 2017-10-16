@@ -4,12 +4,30 @@ namespace App\Controllers;
 
 use App\Request;
 use App\Response;
+use App\Models\Customer;
 
-class HomeController {
+class CustomerController {
 
-    public function index(Request $request, Response $response)
+    public function edit(Request $request, Response $response)
     {
-        return $response->setBody("HomeController");
+        $id = isset($_GET['id']) ? $_GET['id'] : null;
+        $customer = null;
+
+        if ($id) {
+            $customer = Customer::load($id);
+        } else {
+            $customer = new Customer();
+        }
+
+        $html = '<form action="/customer/save" method="POST">';
+
+        foreach ($customer as $field => $value) {
+            $html .= '<input type="text" name="'.$field.'" value="'.$value.'">';
+        }
+
+        $html .= '</form>';
+
+        return $response->setBody($html);
     }
 
     public function json(Request $request, Response $response)

@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e9c62a8f3c1b46f43142006525026bf",
+    "hash": "b0a5483e94450d0cbd01a34e0ff42623",
+    "content-hash": "7195c8c66f78f3c4de3ead95b015dc87",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -60,7 +61,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2017-06-12T01:10:27+00:00"
+            "time": "2017-06-12 01:10:27"
         },
         {
             "name": "javanile/moldable",
@@ -111,7 +112,7 @@
                 "queryobject",
                 "schemadb"
             ],
-            "time": "2017-10-08T23:17:20+00:00"
+            "time": "2017-10-08 23:17:20"
         },
         {
             "name": "monolog/monolog",
@@ -189,7 +190,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2017-06-19T01:22:40+00:00"
+            "time": "2017-06-19 01:22:40"
         },
         {
             "name": "psr/log",
@@ -236,7 +237,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -295,10 +296,57 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-14T15:44:48+00:00"
+            "time": "2017-06-14 15:44:48"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "javanile/producer",
+            "version": "0.0.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Javanile/Producer.git",
+                "reference": "0a629ecad5c88276138a74a6ee73a7348568f718"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Javanile/Producer/zipball/0a629ecad5c88276138a74a6ee73a7348568f718",
+                "reference": "0a629ecad5c88276138a74a6ee73a7348568f718",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.6 || >=7.0 <7.2"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "^5.7"
+            },
+            "bin": [
+                "bin/producer"
+            ],
+            "type": "application",
+            "autoload": {
+                "classmap": [
+                    "src/Producer.php"
+                ],
+                "psr-4": {
+                    "Javanile\\Producer\\Commands\\": "cmd"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Francesco Bianco",
+                    "email": "bianco@javanile.org"
+                }
+            ],
+            "description": "Produce your vendor code everywhere",
+            "time": "2017-03-10 01:47:49"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

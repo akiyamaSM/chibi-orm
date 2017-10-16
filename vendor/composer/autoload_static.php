@@ -27,6 +27,7 @@ class ComposerStaticInitf3c9310c840971d5f1108bb085300396
         ),
         'J' => 
         array (
+            'Javanile\\Producer\\Commands\\' => 27,
             'Javanile\\Moldable\\' => 18,
         ),
         'A' => 
@@ -52,6 +53,10 @@ class ComposerStaticInitf3c9310c840971d5f1108bb085300396
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Javanile\\Producer\\Commands\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/javanile/producer/cmd',
+        ),
         'Javanile\\Moldable\\' => 
         array (
             0 => __DIR__ . '/..' . '/javanile/moldable/src',
@@ -62,11 +67,16 @@ class ComposerStaticInitf3c9310c840971d5f1108bb085300396
         ),
     );
 
+    public static $classMap = array (
+        'Javanile\\Producer' => __DIR__ . '/..' . '/javanile/producer/src/Producer.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitf3c9310c840971d5f1108bb085300396::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitf3c9310c840971d5f1108bb085300396::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf3c9310c840971d5f1108bb085300396::$classMap;
 
         }, null, ClassLoader::class);
     }

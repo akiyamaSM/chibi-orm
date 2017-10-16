@@ -6,5 +6,8 @@
   },
   "require": {
     "javanile/moldable": "^0.0.46"
+  },
+  "require-dev": {
+    "javanile/producer": "^0.0.18"
   }
 }

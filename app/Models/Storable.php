@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use Javanile\Moldable\Storable;
+use Javanile\Moldable\Storable as MoldableStorable;
 
-class Customer extends Storable
+class Storable extends MoldableStorable
 {
 
 }

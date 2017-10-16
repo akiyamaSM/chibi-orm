@@ -5,14 +5,14 @@ namespace App\Controllers;
 use App\Request;
 use App\Response;
 
-class HomeController {
+class ProductController {
 
-    public function index(Request $request, Response $response)
+    public function edit(Request $request, Response $response)
     {
         return $response->setBody("HomeController");
     }
 
-    public function json(Request $request, Response $response)
+    public function listAction(Request $request, Response $response)
     {
         $name = $request->only('name');
         return $response->withJson([

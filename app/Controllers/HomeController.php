@@ -26,6 +26,8 @@ class HomeController {
             <ul>
                 <li><a href="/customer/edit">Create new customer</a></li>
                 <li><a href="/customer/list">List all customers</a></li>
+                <li><a href="/product/edit">Create new product</a></li>
+                <li><a href="/product/list">List all products</a></li>
             <ul>
         ');
     }
