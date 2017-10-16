@@ -19,4 +19,14 @@ class HomeController {
             'name' => $name
         ])->withStatus(200);
     }
+
+    public function menu(Request $request, Response $response)
+    {
+        return $response->setBody('
+            <ul>
+                <li><a href="/customer/edit">Create new customer</a></li>
+                <li><a href="/customer/list">List all customers</a></li>
+            <ul>
+        ');
+    }
 }
