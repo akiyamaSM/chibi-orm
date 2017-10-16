@@ -1,0 +1,32 @@
+os: linux
+group: stable
+dist: trusty
+sudo: required
+language: php
+php: 5.6
+
+branches:
+  only: master
+
+addons:
+  - mysql
+
+before_install:
+  - mysql -u root -e "CREATE DATABASE IF NOT EXISTS \`database\`;"
+  - mysql -u root -e "CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';"
+  - mysql -u root -e "GRANT ALL ON *.* TO 'username'@'localhost'";
+  - mysql -u root -e "FLUSH PRIVILEGES;"
+
+before_script:
+  - mkdir -p build/logs
+  - composer install --no-interaction
+  - composer require codeclimate/php-test-reporter:dev-master --no-interaction
+
+script:
+  - vendor/bin/phpunit --configuration phpunit.xml.travis
+
+after_success:
+  - vendor/bin/test-reporter
+
+notifications:
+  email: "bianco@javanile.org"

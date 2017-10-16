@@ -1,0 +1,47 @@
+{
+    "name": "javanile/moldable",
+    "type": "library",
+    "version": "0.0.46",
+    "description": "Uknown PHP Database Abstraction Layer",
+    "keywords": [
+        "moldable",
+        "schemadb",
+        "database",
+        "persistence",
+        "queryobject"
+    ],
+    "homepage": "http://www.javanile.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Francesco Bianco",
+            "email": "info.francescobianco@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/javanile/moldable"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Javanile\\Moldable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Javanile\\Moldable\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.6",
+        "monolog/monolog": "^1.23",
+        "danielstjules/stringy": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7.19",
+        "javanile/producer": "^0.0.18",
+        "illuminate/database": "^5.4"
+    }
+}
