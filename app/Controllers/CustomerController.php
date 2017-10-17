@@ -10,6 +10,12 @@ class CustomerController
 {
     public function edit(Request $request, Response $response)
     {
+        // I want do this without global
+        global $app;
+        $container = $app->getContainer();
+        $db = $container->db;
+        // ---
+
         $id = isset($_GET['id']) ? $_GET['id'] : null;
         $customer = null;
 
