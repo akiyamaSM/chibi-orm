@@ -2,10 +2,11 @@
 
 namespace App\Models;
 
-use Javanile\Moldable\Storable;
+use App\Models\Storable;
 
-class Customer extends Storable {
+class Customer extends Storable
+{
     public $id = self::PRIMARY_KEY;
-    public $table = 'customers';
+
     public $name = '';
 }

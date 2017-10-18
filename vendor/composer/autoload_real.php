@@ -23,7 +23,7 @@ class ComposerAutoloaderInitf3c9310c840971d5f1108bb085300396
         self::$loader = $loader = new \Composer\Autoload\ClassLoader();
         spl_autoload_unregister(array('ComposerAutoloaderInitf3c9310c840971d5f1108bb085300396', 'loadClassLoader'));
 
-        $useStaticLoader = PHP_VERSION_ID >= 50600 && !defined('HHVM_VERSION') && (!function_exists('zend_loader_file_encoded') || !zend_loader_file_encoded());
+        $useStaticLoader = PHP_VERSION_ID >= 50600 && !defined('HHVM_VERSION');
         if ($useStaticLoader) {
             require_once __DIR__ . '/autoload_static.php';
 

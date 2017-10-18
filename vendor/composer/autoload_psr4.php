@@ -10,6 +10,7 @@ return array(
     'Stringy\\' => array($vendorDir . '/danielstjules/stringy/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
+    'Javanile\\Producer\\Commands\\' => array($vendorDir . '/javanile/producer/cmd'),
     'Javanile\\Moldable\\' => array($vendorDir . '/javanile/moldable/src'),
     'App\\' => array($baseDir . '/app'),
 );
