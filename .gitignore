@@ -2,6 +2,7 @@
 lamp/
 repository/
 docker-compose.yml
+composer.lock
 moldable.log
 producer.log
 producer
