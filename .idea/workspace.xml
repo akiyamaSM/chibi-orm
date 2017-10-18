@@ -24,12 +24,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="CacheApi.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/javanile/moldable/src/Database/CacheApi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46341464" vertical-offset="342" max-vertical-offset="1368">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="26" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2318">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#114#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,7 +183,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1368">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1508072623219" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508072623219" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508072623219" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508072623219" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -237,14 +244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.86890244" vertical-offset="0" max-vertical-offset="7258">
           <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/javanile/moldable/src/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.042683" vertical-offset="2536" max-vertical-offset="9462">
-          <caret line="109" column="20" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -313,9 +312,189 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46341464" vertical-offset="342" max-vertical-offset="1368">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="26" />
-          <folding />
+        <state vertical-scroll-proportion="0.47865853" vertical-offset="370" max-vertical-offset="1368">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <marker date="1508072623219" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508072623219" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508072623219" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508072623219" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/javanile/moldable/src/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.445122" vertical-offset="1264" max-vertical-offset="9462">
+          <caret line="117" column="72" selection-start-line="117" selection-start-column="65" selection-end-line="117" selection-end-column="72" />
+          <folding>
+            <marker date="1508071663724" expanded="false" signature="-1:-1" placeholder=" Class that handle a connection with database. ..." />
+            <marker date="1508071663724" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Release version number. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Constructor arguments passed. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Connected for database socket. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Connected for database sql writer or composer. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Connected for database schema parser or interpreter. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Logger handler. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Database status ready for queries. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Trace for debugging. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Timestamp for benchmark. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Constant to enable debug print-out. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Database instance for singleton or default implicit call. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Construct and connect a SchemaDB drive ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Retrieve default SchemaDB connection. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Test if have a default db connection. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Set global context default database ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Set global context default database ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Retrieve current parser. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Retrieve current writer. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Debug mode setter. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Debug mode getter. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder=" Print-out a memory used benchmark. ..." />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663724" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/javanile/moldable/src/Database/Socket/SocketInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24695122" vertical-offset="142" max-vertical-offset="798">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <marker date="1508071663784" expanded="false" signature="-1:-1" placeholder=" Socket trait comunications and interactions with database. ..." />
+            <marker date="1508071663784" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663784" expanded="true" signature="-1:-1" placeholder=" Get a single record. ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/javanile/moldable/src/Database/Socket/LaravelSocket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3292685" vertical-offset="6792" max-vertical-offset="7790">
+          <caret line="112" column="40" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="40" />
+          <folding>
+            <marker date="1508071663757" expanded="false" signature="-1:-1" placeholder=" PDO Socket handle comunications and interactions ..." />
+            <marker date="1508071663757" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" @var \Javanile\SchemaDB\Database ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" @var int ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" @var int ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" @var int ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" @var int ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Construct socket. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Get a single row. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Get list of records. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Get list of records as object. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Get a array of values of specific column. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Get a single value. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Return prefix passed on init attribute. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Return prefix passed on init attribute. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Return last insert id. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Return last insert id. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Start transact query. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Roll back query. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder=" Execute query. ..." />
+            <marker date="1508071663757" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/javanile/moldable/src/Database/Socket/PdoSocket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2317073" vertical-offset="4380" max-vertical-offset="10374">
+          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+          <folding>
+            <marker date="1508071663760" expanded="false" signature="-1:-1" placeholder=" PDO Socket handle comunications and interactions ..." />
+            <marker date="1508071663760" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" @var type ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" @var type ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" @var type ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" @var type ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" @ ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" Start PDO connection. ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" @param type       $sql ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" @param type       $sql ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" @param type       $sql ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" Get single column elements. ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" @param type       $sql ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" Return prefix passed on init attribute. ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" Return prefix passed on init attribute. ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" Return last insert id. ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" Return last insert id. ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" Starting a transaction to DB. ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" Transactional commit. ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" Transactional rollback. ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder=" Execute a SQL query on DB with binded values. ..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1508071663760" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/javanile/moldable/src/Database/CacheApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2090">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#114#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
