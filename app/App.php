@@ -68,8 +68,9 @@ class App{
     {
         $response = $this->container->response;
         $request = $this->container->request;
+        $db = $this->container->db;
         if(is_callable($callable)){
-            return $callable($request, $response);
+            return $callable($db, $request, $response);
         }
         if(is_string($callable)){
             $array = explode('@', $callable);
@@ -85,7 +86,7 @@ class App{
                 throw new ControllersMethodNotFound("{$method} Not Found in the {$class} Controller");
             }
 
-            return call_user_func([$caller, $method], $request, $response);
+            return call_user_func([$caller, $method],$db, $request, $response);
         }
     }
 
