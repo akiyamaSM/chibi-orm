@@ -7,14 +7,18 @@ use Javanile\Moldable\Functions;
 trait DebugApi
 {
     /**
-     * @param type  $trace
-     * @param type  $error
-     * @param mixed $exception
      * @param mixed $type
+     * @param mixed $exception
+     *
+     * @throws \Javanile\Moldable\Exception
+     *
+     * @internal param type $trace
+     * @internal param type $error
      */
     public static function error($type, $exception)
     {
         $reflector = new \ReflectionClass(static::getClass());
+        $offset = 0;
 
         switch ($type) {
             case 'class':
@@ -23,13 +27,11 @@ trait DebugApi
                     'file' => $reflector->getFileName(),
                     'line' => $reflector->getStartLine(),
                 ]];
-                $offset = 0;
                 break;
 
-            case 'database':
-                $slug = 'Moldable database error, ';
-                $backtrace = debug_backtrace();
-                $offset = 0;
+            case 'connection':
+                $slug = 'Moldable connection error, ';
+                $backtrace = null;
                 break;
         }
 
@@ -57,7 +59,7 @@ trait DebugApi
     /**
      * Print-out list of element.
      *
-     * @param type $list
+     * @param string $list
      */
     public static function dump($list = 'all')
     {

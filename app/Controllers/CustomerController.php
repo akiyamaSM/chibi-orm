@@ -10,47 +10,51 @@ class CustomerController
 {
     public function edit(Request $request, Response $response)
     {
-        // I want do this without global
-        global $app;
-        $container = $app->getContainer();
-        $db = $container->db;
-        // ---
-
         $id = isset($_GET['id']) ? $_GET['id'] : null;
-        $customer = null;
 
-        if ($id) {
-            $customer = Customer::load($id);
-        } else {
-            $customer = new Customer();
-        }
+        $customer = $id ? Customer::load($id) : new Customer();
 
-        $html = '<form action="/customer/save" method="POST">';
+        $html = '<form action="/customer/save" method="POST">'
+              . '<table border="1">';
 
         foreach ($customer as $field => $value) {
-            $html .= '<input type="text" name="'.$field.'" value="'.$value.'">';
+            $html.= '<tr><td><label>'.$field.'</label></td>'
+                  . '<td><input type="text" name="'.$field.'" value="'.$value.'"></td></tr>';
         }
 
-        $html .= '</form>';
+        $html .= '</table><input type="submit" value="Save"></form>';
 
         return $response->setBody($html);
     }
 
-    public function json(Request $request, Response $response)
+    public function save(Request $request, Response $response)
     {
-        $name = $request->only('name');
-        return $response->withJson([
-            'name' => $name
-        ])->withStatus(200);
+        Customer::make($_POST)->store();
+
+        header("Location: /customer/list");
     }
 
-    public function menu(Request $request, Response $response)
+    public function listAction(Request $request, Response $response)
     {
-        return $response->setBody('
-            <ul>
-                <li><a href="/customer/edit">Create new customer</a></li>
-                <li><a href="/customer/list">List all customers</a></li>
-            <ul>
-        ');
+        $html = '<a href="/">main menu</a> - <a href="/customer/edit">add new</a><hr/>'
+              . '<table border="1"><tr>';
+
+        foreach (Customer::getModelFields() as $field) {
+            $html.= '<th>'.$field.'</th>';
+        }
+
+        $html.= '<th></th></tr>';
+
+        foreach (Customer::all() as $customer) {
+            $html.= '<tr>';
+            foreach (Customer::getModelFields() as $field) {
+                $html.= '<td>'.$customer->{$field}.'</td>';
+            }
+            $html.= '<td><a href="/customer/edit?id='.$customer->getPrimaryKeyValue().'">edit</a></td></tr>';
+        }
+
+        $html.= '</table>';
+
+        return $response->setBody($html);
     }
 }

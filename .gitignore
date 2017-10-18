@@ -1,4 +1,7 @@
 .idea/
 lamp/
+repository/
 docker-compose.yml
+moldable.log
+producer.log
 producer
